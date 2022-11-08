@@ -1,0 +1,272 @@
+
+.wrapper {
+	overflow: hidden;
+	position: relative;
+	min-height: 100%;
+	z-index: 999;
+}
+.header{
+width: 100%;
+
+	background: -moz-linear-gradient(top, #ebf1f6 0%, #abd3ee 41%, #89c3eb 78%, #d5ebfb 100%);
+
+	background: -webkit-linear-gradient(top, #ebf1f6 0%, #abd3ee 41%, #89c3eb 78%, #d5ebfb 100%);
+
+	background: linear-gradient(to bottom, #ebf1f6 0%, #abd3ee 41%, #89c3eb 78%, #d5ebfb 100%);
+
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ebf1f6', endColorstr='#d5ebfb', GradientType=0);
+
+	position: fixed;
+	left: 0;
+	top: 0;
+	z-index: 100;
+	padding: 10px;
+}
+
+.header__container {
+	max-width: 800px;
+	margin: 0 auto;
+}
+
+.header__menu {
+	font-weight: 600;
+	color: red;
+}
+
+.menu__item{
+	display: inline-block;
+	position: relative;
+}
+
+.menu__item:not(:last-child) {
+	margin-right: 50px;
+}
+
+.menu__link{
+	color: blueviolet;
+	font-size: 20px;
+	display: inline-block;
+	padding: 5px 0px;
+}
+
+.sub-menu{
+min-width: 70px;
+background:-moz-linear-gradient(top, #ebf1f6 0%, #abd3ee 41%, #89c3eb 78%, #d5ebfb 100%);
+
+	background: -webkit-linear-gradient(top, #ebf1f6 0%, #abd3ee 41%, #89c3eb 78%, #d5ebfb 100%);
+
+	background: linear-gradient(to bottom, #ebf1f6 0%, #abd3ee 41%, #89c3eb 78%, #d5ebfb 100%);
+
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ebf1f6', endColorstr='#d5ebfb', GradientType=0);;
+position: absolute;
+left: 0;
+top: 130%;
+padding: 15px;
+opacity: 0;
+visibility: hidden;
+}
+
+.sub-menu__link{
+	margin-bottom: 5px;
+}
+
+.menu__item:hover .sub-menu {
+	opacity: 1;
+	visibility: visible;
+	top: 100%;
+}
+
+.main__test{
+	padding: 50px;
+	background: chocolate;
+	margin: 100px;
+	position: relative;
+}
+
+.test__block{
+	margin:0 auto ;
+	padding: 50;
+	height: 50px;
+	width: 200px;
+}
+
+.block--one{
+	position: absolute;
+	background: blue;
+	left: 0;
+	top: 0;
+}
+
+.block--two{
+	position: absolute;
+	background: yellow;
+	left: 0;
+	top: 50px;
+}
+
+.block--three{
+	background: green;
+}
+
+
+/* ------------------------------------------------------- */
+.car{
+	position: relative;
+}
+
+.cabin-body__windshield-front{
+	border: 2px solid black;
+	border-radius: 0% 100% 100% 0% / 0% 100% 0% 100%;
+	background: blue;
+	height: 100px;
+	width: 300px;
+	position: absolute;
+		left: 600px;
+		top: 100px;
+
+}
+
+.cabin-body__windshield-back{
+	border: 2px solid black;
+	border-radius: 100% 0% 100% 0% / 100% 100% 0% 0%;
+	background: blue;
+	height: 100px;
+	width: 300px;
+	position: absolute;
+		left: 300px;
+		top: 100px;
+}
+
+
+
+.cabin-body{
+	border: 2px solid black;
+	border-radius: 8% 100% 0% 100% / 100% 0% 100% 0%;
+		background: blue;
+		height: 120px;
+		width: 650px;
+		position: absolute;
+		left:250px;
+		top: 200px;
+}
+
+.cabin-body__mask{
+	border: 2px solid black;
+		background: blue;
+		border-radius: 0% 100% 0% 100% / 100% 49% 51% 0%;
+		height: 120px;
+		width: 200px;
+		position: absolute;
+		left: 900px;
+		top: 200px;
+}
+
+.cabin-body__lights{
+	border: 2px solid black;
+		background: grey;
+		height: 30px;
+		width: 40px;
+		position: absolute;
+		left: 1058px;
+		top: 255px;
+		z-index: 1;
+}
+.cabin-body__turn-lights{
+	border: 2px solid black;
+		background: red;
+		height: 30px;
+		width: 10px;
+		position: absolute;
+		left: 1058px;
+		top: 255px;
+		z-index: 2;
+}
+
+.cabin-body__turn-lights-back{
+border: 2px solid black;
+	background: yellow;
+	height: 10px;
+	width: 40px;
+	position: absolute;
+	left: 250px;
+	top: 237px;
+	z-index: 1;
+}
+.cabin-body__lights-back{
+border: 2px solid black;
+	background: red;
+	height: 30px;
+	width: 40px;
+	position: absolute;
+	left: 250px;
+	top: 245px;
+	z-index: 1;
+}
+
+.cabin-body__dor-forward{
+	border: 2px solid black;
+	background: rgb(16, 16, 210);
+	height: 120px;
+	width: 300px;
+	position: absolute;
+	left: 600px;
+	top: 200px;
+	z-index: 3;
+}
+
+.cabin-body__dor-back{
+	border: 2px solid black;
+		background: rgb(16, 16, 210);
+		height: 120px;
+		width: 300px;
+		position: absolute;
+		left: 300px;
+		top: 200px;
+		z-index: 3;
+}
+
+.cabin-body__klamka{
+	border: 2px solid black;
+	background: rgb(16, 16, 210);
+	height: 1px;
+	width: 20px;
+	position: absolute;
+	left: 350px;
+	top: 230px;
+	z-index: 4;
+}
+
+.cabin-body__klamka-forward {
+	border: 2px solid black;
+	background: rgb(16, 16, 210);
+	height: 1px;
+	width: 20px;
+	position: absolute;
+	left: 650px;
+	top: 230px;
+	z-index: 4;
+}
+
+.cabin-body__wheel-forward{
+	border-radius: 50% 50%;
+		border: 20px solid black;
+		background: silver;
+		height: 100px;
+		width: 100px;
+		position: absolute;
+		left: 930px;
+		top: 260px;
+		z-index: 5;
+}
+
+.cabin-body__wheel-back{
+	border-radius: 50% 50%;
+	border: 20px solid black;
+	background: silver;
+	height: 100px;
+	width: 100px;
+	position: absolute;
+	left: 280px;
+	top: 260px;
+	z-index: 5;
+}
